@@ -1,0 +1,55 @@
+.header {
+  height: 80px;
+  background-color: var(--color-bg);
+  color: var(--color-white);
+}
+
+.header .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1.logo {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.gnb {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  height: 80px;
+  
+}
+
+.gnb > li {
+  position: relative;
+  line-height: 80px;
+}
+
+.gnb > li:hover .sub {
+  display: block;
+}
+
+.sub {
+  display: none;
+  position: absolute;
+  top: 100%; left: 50%; transform: translateX(-50%);
+  background-color: var(--color-bg);
+  z-index: 100;
+}
+
+.sub li a {
+  display: block;
+  padding: 10px 20px;
+  white-space: nowrap;
+  color: var(--color-white);
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+}
+
+.sub li a:hover {
+  background-color: var(--color-primary);
+}

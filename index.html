@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steam</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="header">
+    <div class="inner">
+      <!-- 로고 -->
+      <h1 class="logo"><a href="#">STEAM</a></h1>
+
+      <!-- 내비게이션 -->
+      <nav class="nav">
+        <ul class="gnb">
+          <li class="has_sub">
+            <a href="#">상점</a>
+            <ul class="sub">
+              <li><a href="#">찜 목록</a></li>
+              <li><a href="#">포인트 상점</a></li>
+              <li><a href="#">통계</a></li>
+            </ul>
+          </li>
+          <li class="has_sub">
+            <a href="#">커뮤니티</a>
+            <ul class="sub">
+              <li><a href="#">토론</a></li>
+              <li><a href="#">창작마당</a></li>
+              <li><a href="#">장터</a></li>
+              <li><a href="#">방송</a></li>
+            </ul>
+          </li>
+          <li><a href="#">다운로드</a></li>
+          <li><a href="#">마이페이지</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- main -->
+  <main>
+    <section class="hero">
+      <video class="hero_video" autoplay muted loop playsinline>
+        <source src="https://video.cloudflare.steamstatic.com/store_trailers/256992403/movie480_vp9.webm?t=1736451730" type="video/mp4">
+        <!-- <source src="https://videos.pexels.com/video-files/30873886/13201628_2560_1440_24fps.mp4" type="video/mp4"> -->
+      </video>
+      <div class="inner">
+        <div class="hero_txt">
+          <h2 class="hero_title">지금 인기 있는 게임</h2>
+          <p class="hero_desc">매일 업데이트되는 새로운 추천 게임을 만나보세요</p>
+          <div class="btn_wrap">
+            <a href="#" class="btn btn_primary">게임 보러 가기</a>
+            <a href="#" class="btn btn_secondary">컬렉션 보기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommend">
+      <div class="inner">
+        <h2 class="section_title">추천 게임</h2>
+        <ul class="card_wrap">
+          <li class="game_card">
+            <img src="img/thum.PNG" alt="게임 썸네일">
+            <div class="game_info">
+              <h3 class="game_title">사이버 블레이드</h3>
+              <p class="game_price">₩29,000</p>
+            </div>
+          </li>
+          <li class="game_card">
+            <img src="img/thum2.PNG" alt="게임 썸네일">
+            <div class="game_info">
+              <h3 class="game_title">네온 시티</h3>
+              <p class="game_price">₩15,500</p>
+            </div>
+          </li>
+          <li class="game_card">
+            <div class="badge">-50%</div>
+            <img src="img/thum.PNG" alt="게임 썸네일">
+            <div class="game_info">
+              <h3 class="game_title">네온 시티</h3>
+              <p class="game_price">₩14,500 <span class="original_price">₩29,000</span></p>
+            </div>
+          </li>
+          <li class="game_card">
+            <img src="img/thum2.PNG" alt="게임 썸네일">
+            <div class="game_info">
+              <h3 class="game_title">네온 시티</h3>
+              <p class="game_price">₩15,500</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="inner">
+        <div class="section_top">
+          <h2 class="section_title">카테고리별 게임</h2>
+          <a href="#" class="view_all">전체보기 &gt;</a>
+        </div>
+        <div class="category_grid">
+          <div class="category_card" style="background-image:url('img/category_rpg.png');"><span>RPG</span></div>
+          <div class="category_card" style="background-image:url('img/category_racing.png');"><span>레이싱</span></div>
+          <div class="category_card" style="background-image:url('img/category_casual.png');"><span>캐주얼</span></div>
+          <div class="category_card" style="background-image:url('img/category_simulation.png');"><span>시뮬레이션</span></div>
+          <div class="category_card" style="background-image:url('img/category_action.png');"><span>액션</span></div>
+          <div class="category_card" style="background-image:url('img/category_adventure.png');"><span>어드벤처</span></div>
+          <div class="category_card" style="background-image:url('img/category_indie.png');"><span>인디</span></div>
+          <div class="category_card" style="background-image:url('img/category_strategy.png');"><span>전략</span></div>
+          <div class="category_card large" style="background-image:url('img/category_all.png');"><span>전체보기</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="deck">
+      <video class="deck_video" autoplay muted loop playsinline>
+        <source src="https://clan.cloudflare.steamstatic.com/images//39049601/9e43ee4ba768ed4055fd47579b77aedf0864d1e4.mp4?origin=https://store.steampowered.com/" type="video/mp4">
+      </video>
+      <div class="inner">
+        <div class="deck_txt">
+          <h2 class="deck_title">Steam Deck,</h2>
+          <p class="deck_desc">언제 어디서나 플레이하세요.</p>
+          <div class="btn_wrap">
+            <a href="#" class="btn btn_primary">더 알아보기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="discount">
+      <div class="inner">
+        <h2 class="section_title">특별 할인</h2>
+        <div class="discount_wrap">
+          
+          <div class="discount_list">
+            <div class="discount_item">
+              <span class="badge">-50%</span>
+              <img src="img/category_indie.png" alt="게임 이미지">
+              <div class="discount_info">
+                <h3 class="game_title">게임 이름</h3>
+                <p class="category">카테고리</p>
+                <p class="desc">게임 설명 짧게 들어가는 부분입니다 게임 설명 짧게 들어가는 부분입니다</p>
+                <p class="price"><span class="sale">₩9,900</span><span class="original">₩19,800</span></p>
+              </div>
+            </div>
+
+            <div class="discount_item">
+              <span class="badge">-40%</span>
+              <img src="img/thum2.PNG" alt="게임 이미지">
+              <div class="discount_info">
+                <h3 class="game_title">게임 이름</h3>
+                <p class="category">카테고리</p>
+                <p class="desc">게임 설명 짧게 들어가는 부분입니다 게임 설명 짧게 들어가는 부분입니다</p>
+                <p class="price"><span class="sale">₩11,800</span><span class="original">₩19,800</span></p>
+              </div>
+            </div>
+
+            <div class="discount_item">
+              <span class="badge">-70%</span>
+              <img src="img/thum2.PNG" alt="게임 이미지">
+              <div class="discount_info">
+                <h3 class="game_title">게임 이름</h3>
+                <p class="category">카테고리</p>
+                <p class="desc">게임 설명 짧게 들어가는 부분입니다 게임 설명 짧게 들어가는 부분입니다</p>
+                <p class="price"><span class="sale">₩5,800</span><span class="original">₩19,800</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="discount_banner">
+            <video autoplay muted loop playsinline>
+              <source src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/clusters/frontpage/4fa63e33a83826e6b14f619d/webm_page_bg_koreana.webm?t=1747439102" type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+  <div class="inner">
+    <div class="footer_top">
+      <p class="footer_desc">이 사이트는 개인 프로젝트 용도로 제작된 스팀 리디자인 사이트입니다.</p>
+      <ul class="footer_links">
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">다운로드</a></li>
+      </ul>
+    </div>
+    <div class="footer_bottom">
+      <small>© 2025 Steam Reboot. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>
