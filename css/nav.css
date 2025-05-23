@@ -20,7 +20,6 @@ h1.logo {
   align-items: center;
   gap: 50px;
   height: 80px;
-  
 }
 
 .gnb > li {
@@ -52,4 +51,74 @@ h1.logo {
 
 .sub li a:hover {
   background-color: var(--color-primary);
+}
+
+.btn_menu {
+  display:none;
+  flex-direction:column;
+  justify-content:space-between;
+  width:24px;height:18px;
+  margin-top:31px;
+  border:none;
+  background:none;
+  cursor:pointer;
+}
+
+.btn_menu span {
+  display:block;
+  height:2px;
+  background:#fff;
+  border-radius:1px;
+}
+
+.m_nav {display:none;}
+
+@media screen and (max-width:768px) {
+  .nav {display:none;}
+
+  .btn_menu {display:flex;z-index:1000;}
+
+  .m_nav {
+    display:block;
+    position:fixed;
+    top:0; right:-100%;
+    width:260px;
+    height:100%;
+    background-color:var(--color-bg);
+    z-index:999;
+    transition:right 0.3s ease;
+    padding:80px 20px 40px;
+    box-shadow:2px 0 12px rgba(0,0,0,0.15);
+  }
+
+  .m_nav.active {right:0;}
+
+  .m_gnb {
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+
+  .m_gnb > li > a {
+    font-size:16px;
+    color:var(--color-white);
+    font-weight:600;
+    padding:8px 0;
+    display:block;
+  }
+
+  .m_sub {
+    padding-left:12px;
+    display:none;
+    flex-direction:column;
+    gap:6px;
+  }
+
+  .m_has_sub.active .m_sub {display:flex;}
+
+  .m_sub li a {
+    font-size:14px;
+    color:var(--gray-400);
+    padding:6px 0;
+  }
 }

@@ -12,3 +12,15 @@ img {user-select:none;-webkit-user-drag:none;}
 
 /* layout */
 .inner {max-width:1560px;width:100%;margin:0 auto;padding:0 60px;}
+
+@media screen and (max-width:1024px) {
+  .inner {padding:0 24px;}
+}
+
+@media screen and (max-width:768px) {
+  .inner {padding:0 12px;}
+}
+
+@media screen and (max-width:480px) {
+  .inner {padding:0 8px;}
+}

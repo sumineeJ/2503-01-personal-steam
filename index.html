@@ -41,8 +41,68 @@
           <li><a href="#">마이페이지</a></li>
         </ul>
       </nav>
+
+      <button class="btn_menu" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="m_nav">
+        <ul class="m_gnb">
+          <li class="m_has_sub">
+            <a href="#">상점</a>
+            <ul class="m_sub">
+              <li><a href="#">찜 목록</a></li>
+              <li><a href="#">포인트 상점</a></li>
+              <li><a href="#">통계</a></li>
+            </ul>
+          </li>
+          <li class="m_has_sub">
+            <a href="#">커뮤니티</a>
+            <ul class="m_sub">
+              <li><a href="#">토론</a></li>
+              <li><a href="#">창작마당</a></li>
+              <li><a href="#">장터</a></li>
+              <li><a href="#">방송</a></li>
+            </ul>
+          </li>
+          <li><a href="#">다운로드</a></li>
+          <li><a href="#">마이페이지</a></li>
+        </ul>
+      </nav>
+
+
+      <script>
+  const menuBtn = document.querySelector('.btn_menu');
+  const mNav = document.querySelector('.m_nav');
+  const mSubMenus = document.querySelectorAll('.m_has_sub > a');
+
+  // 모바일 메뉴 전체 열기/닫기
+  menuBtn.addEventListener('click', () => {
+    mNav.classList.toggle('active');
+  });
+
+  // 서브메뉴 개별 열기/닫기
+  mSubMenus.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault(); // 링크 막고
+      const parentLi = link.parentElement;
+      parentLi.classList.toggle('active');
+    });
+  });
+</script>
+
+
     </div>
   </header>
+
+  <script>
+  const btn = document.querySelector('.btn_menu');
+  const gnb = document.querySelector('.gnb');
+
+  btn.addEventListener('click', () => {
+    gnb.classList.toggle('open');
+  });
+</script>
 
   <!-- main -->
   <main>
