@@ -69,40 +69,8 @@
           <li><a href="#">마이페이지</a></li>
         </ul>
       </nav>
-
-
-      <script>
-  const menuBtn = document.querySelector('.btn_menu');
-  const mNav = document.querySelector('.m_nav');
-  const mSubMenus = document.querySelectorAll('.m_has_sub > a');
-
-  // 모바일 메뉴 전체 열기/닫기
-  menuBtn.addEventListener('click', () => {
-    mNav.classList.toggle('active');
-  });
-
-  // 서브메뉴 개별 열기/닫기
-  mSubMenus.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault(); // 링크 막고
-      const parentLi = link.parentElement;
-      parentLi.classList.toggle('active');
-    });
-  });
-</script>
-
-
     </div>
   </header>
-
-  <script>
-  const btn = document.querySelector('.btn_menu');
-  const gnb = document.querySelector('.gnb');
-
-  btn.addEventListener('click', () => {
-    gnb.classList.toggle('open');
-  });
-</script>
 
   <!-- main -->
   <main>
@@ -128,32 +96,32 @@
         <h2 class="section_title">추천 게임</h2>
         <ul class="card_wrap">
           <li class="game_card">
-            <img src="img/thum.PNG" alt="게임 썸네일">
+            <img src="img/thum.PNG" alt="스타듀 밸리 썸네일">
             <div class="game_info">
-              <h3 class="game_title">사이버 블레이드</h3>
-              <p class="game_price">₩29,000</p>
+              <h3 class="game_title">스타듀 밸리</h3>
+              <p class="game_price">₩16,000</p>
             </div>
           </li>
           <li class="game_card">
-            <img src="img/thum2.PNG" alt="게임 썸네일">
+            <img src="img/thum2.PNG" alt="집 나간 거위 게임 썸네일">
             <div class="game_info">
-              <h3 class="game_title">네온 시티</h3>
-              <p class="game_price">₩15,500</p>
+              <h3 class="game_title">Untitled Goose Game</h3>
+              <p class="game_price">₩21,000</p>
             </div>
           </li>
           <li class="game_card">
-            <div class="badge">-50%</div>
-            <img src="img/thum.PNG" alt="게임 썸네일">
+            <div class="badge">-30%</div>
+            <img src="img/thum.PNG" alt="컬트 오브 더 램 썸네일">
             <div class="game_info">
-              <h3 class="game_title">네온 시티</h3>
-              <p class="game_price">₩14,500 <span class="original_price">₩29,000</span></p>
+              <h3 class="game_title">컬트 오브 더 램</h3>
+              <p class="game_price">₩16,800 <span class="original_price">₩24,000</span></p>
             </div>
           </li>
           <li class="game_card">
-            <img src="img/thum2.PNG" alt="게임 썸네일">
+            <img src="img/thum2.PNG" alt="스트레이 고양이 게임 썸네일">
             <div class="game_info">
-              <h3 class="game_title">네온 시티</h3>
-              <p class="game_price">₩15,500</p>
+              <h3 class="game_title">스트레이</h3>
+              <p class="game_price">₩35,000</p>
             </div>
           </li>
         </ul>
@@ -203,34 +171,34 @@
           <div class="discount_list">
             <div class="discount_item">
               <span class="badge">-50%</span>
-              <img src="img/category_indie.png" alt="게임 이미지">
+              <img src="img/category_indie.png" alt="돈스타브 투게더 썸네일">
               <div class="discount_info">
-                <h3 class="game_title">게임 이름</h3>
-                <p class="category">카테고리</p>
-                <p class="desc">게임 설명 짧게 들어가는 부분입니다 게임 설명 짧게 들어가는 부분입니다</p>
-                <p class="price"><span class="sale">₩9,900</span><span class="original">₩19,800</span></p>
+                <h3 class="game_title">돈스타브 투게더</h3>
+                <p class="category">생존 · 협동</p>
+                <p class="desc">귀엽지만 무서운 세계에서 살아남기!</p>
+                <p class="price"><span class="sale">₩5,000</span><span class="original">₩10,000</span></p>
               </div>
             </div>
 
             <div class="discount_item">
               <span class="badge">-40%</span>
-              <img src="img/thum2.PNG" alt="게임 이미지">
+              <img src="img/thum2.PNG" alt="언레일드! 썸네일">
               <div class="discount_info">
-                <h3 class="game_title">게임 이름</h3>
-                <p class="category">카테고리</p>
-                <p class="desc">게임 설명 짧게 들어가는 부분입니다 게임 설명 짧게 들어가는 부분입니다</p>
-                <p class="price"><span class="sale">₩11,800</span><span class="original">₩19,800</span></p>
+                <h3 class="game_title">언레일드!</h3>
+                <p class="category">멀티 · 캐주얼</p>
+                <p class="desc">친구랑 기차선로를 만들며 대혼란!</p>
+                <p class="price"><span class="sale">₩7,800</span><span class="original">₩13,000</span></p>
               </div>
             </div>
 
             <div class="discount_item">
               <span class="badge">-70%</span>
-              <img src="img/thum2.PNG" alt="게임 이미지">
+              <img src="img/thum2.PNG" alt="헨리 스틱민 콜렉션 썸네일">
               <div class="discount_info">
-                <h3 class="game_title">게임 이름</h3>
-                <p class="category">카테고리</p>
-                <p class="desc">게임 설명 짧게 들어가는 부분입니다 게임 설명 짧게 들어가는 부분입니다</p>
-                <p class="price"><span class="sale">₩5,800</span><span class="original">₩19,800</span></p>
+                <h3 class="game_title">헨리 스틱민 컬렉션</h3>
+                <p class="category">선택 · 스토리</p>
+                <p class="desc">말도 안 되지만 너무 재밌는 선택지 어드벤처!</p>
+                <p class="price"><span class="sale">₩4,500</span><span class="original">₩15,000</span></p>
               </div>
             </div>
           </div>
@@ -266,5 +234,7 @@
 </footer>
 
 </div>
+
+<script src="js/nav.js"></script>
 </body>
 </html>
